@@ -23,7 +23,7 @@ import PropTypes from 'prop-types';
         setNewCategory('');
     }
     return (
-        <form onSubmit={onSubmit}>
+        <form aria-label='form' onSubmit={onSubmit}>
             <input type='text' placeholder='Buscar gifs' onChange={handleAdd} value={newCategory}></input>
             <button onClick={ handleClick }> Add a new category </button>
         </form>

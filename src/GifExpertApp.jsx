@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { AddCategory, GifGrid } from './components';
 
 
-const GifExpertApp = () => {
+export const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['Friends', 'Baile', 'Animals']);
+    const [categories, setCategories] = useState(['FRIENDS', 'BAILE', 'ANIMALS']);
 
     const handleAddCategory = (newCategory) => {
 
-        if(categories.includes(newCategory.toLowerCase())) return;
+        if(categories.includes(newCategory.toUpperCase())) return;
 
-        setCategories([newCategory.toLowerCase(),...categories ])
+        setCategories([newCategory.toUpperCase(),...categories ])
     }
     return (
         <>
@@ -33,4 +33,3 @@ const GifExpertApp = () => {
     );
 }
 
-export default GifExpertApp;

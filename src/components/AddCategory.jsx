@@ -31,6 +31,6 @@ import PropTypes from 'prop-types';
 }
 
 
-AddCategory.PropTypes = {
+AddCategory.propTypes = {
     handleAddCategory: PropTypes.func.isRequired,
 }

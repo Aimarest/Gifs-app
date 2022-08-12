@@ -35,7 +35,7 @@ describe('Pruebas sobre el componente GifExpertApp', () => {
 
      })
 
-     test('Cuando escribo una categoría en el formulario debe aparecer dentor del array de categorías', () => { 
+     test('Cuando escribo una categoría en el formulario debe aparecer una categoría llamada así', () => { 
         const inputValue = 'KOALA';
         render(<GifExpertApp />)
         const input = screen.getByRole('textbox');
